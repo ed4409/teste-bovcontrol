@@ -1,0 +1,50 @@
+{
+  "name": "teste-bovcontrol",
+  "version": "1.0.0",
+  "description": "API",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node app.mjs",
+    "startwin": "SET NODE_ENV=development && nodemon --trace-warnings app.mjs",
+    "testwin": "SET NODE_TEST=true && mocha --require-esm --recursive ./test/**/*.mjs --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "indicative": "^7.4.4",
+    "jsonwebtoken": "^9.0.2",
+    "jwk-to-pem": "^2.0.5",
+    "mongodb": "^5.9.2",
+    "swagger-ui-express": "^5.0.0",
+    "uuid": "^9.0.1",
+    "uuid-mongodb": "^2.5.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "chai": "^5.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "faker": "^6.6.6",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "mocha": "^10.2.0",
+    "mongodb-memory-server": "^9.1.3",
+    "nodemon": "^3.0.2",
+    "request": "^2.88.2",
+    "should": "^13.2.3",
+    "uuid-validate": "^0.0.3"
+  }
+}
