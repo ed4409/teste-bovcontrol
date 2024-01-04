@@ -2,7 +2,7 @@
   "name": "teste-bovcontrol",
   "version": "1.0.0",
   "description": "API",
-  "main": "index.js",
+  "main": "app.mjs",
   "directories": {
     "test": "test"
   },
@@ -14,6 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
