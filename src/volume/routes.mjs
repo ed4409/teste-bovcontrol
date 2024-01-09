@@ -1,4 +1,5 @@
 import * as VolumeController from "./controllers/VolumeController.mjs";
+//import * as VolumeController from "./controllers/FazandeiroController.mjs";
 import * as VolumeDailyAverageSupervisorController from "./controllers/VolumeDailyAverageSupervisorController.mjs";
 import * as VolumePriceAverageSupervisorController from "./controllers/VolumePriceAverageSupervisorController.mjs";
 import * as VolumePriceAverageMonthsSupervisorController from "./controllers/VolumePriceAverageMonthsSupervisorController.mjs";
@@ -46,5 +47,7 @@ router
 router
   .route("/v1/volume/Supervisor/priceAverage/months")
   .get(VolumePriceAverageMonthsSupervisorController.search); // add authToken.validateToken,
+//router.route("/v1/fazendeiro/cadastro").post(FazandeiroController.store);
+router;
 
 export default router;
